@@ -266,7 +266,7 @@ $ hadoop fs -get output_by_category
 # Check results
 $ vim output_by_category/part-00000
 
-## The final task
+## The file pathname task
 
 The final task in the lesson 3 is to find most popular file pathname.
 For some reason my answer was not the same as correct result accepted by udacity.
