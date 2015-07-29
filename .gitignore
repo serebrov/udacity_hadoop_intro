@@ -1,0 +1,7 @@
+*.tags
+*.pyc
+*.py~
+*.orig
+
+# Ignore output files
+code*/output*
