@@ -18,7 +18,7 @@ Here there are notes and tasks code for Cloudera / Udacity [hadoop course](http:
   - Hive - SQL-like language on top of MR
   - Pig - simple scripting language on top of MR
   - Impala - SQL-like language on top of HDFS, direct access to HDFS, no MR, faster than Hive / Pig
-    - Impala queries are optimized to run fast, much
+    - Impala queries are optimized to run fast.
     - Impala was developed as a way to query your data with SQL, but which directly accesses the data in HDFS rather than needing map reduce.
     - Impala is optimized for low latency queries. In other words Impala queries run very quickly, typically many times faster than Hive, while Hive is optimized for running long batch processing jobs.
   - Sqoop - takes data from a traditional relational database, such as Microsoft SQL Server. And, puts it in HDFS, as the limited files. So, it can be processed along with other data on the cluster.
@@ -167,6 +167,26 @@ if oldKey != None:
   - primary language is Java
   - the Hadoop Streaming allows to write in any other language (for example, Python)
 
+- Patterns
+  - Filtering patterns: Sampling, Top-N lists
+    - Don't change the data
+    - Simple filter - a function
+    - [Bloom filter](http://en.wikipedia.org/wiki/Bloom_filter), [hadoop docs](http://hadoop.apache.org/docs/r2.4.1/api/org/apache/hadoop/util/bloom/BloomFilter.html)
+    - Sampling - pull some sample of original data
+    - Random sampling - pull some random sample
+    - Top-N - top N records
+      - Each mapper generate top N list
+      - Reducer finds global top N
+  - Summarization patterns: Counting, Min/Max, Statistics, Index
+      - Inverted index
+      - Numerical summarizations - counts, min/max, frist/last, mean/median
+  - Structural patterns: Combining data sets
+
+- Books
+  - [Hadoop: The Definitive Guide](http://shop.oreilly.com/product/0636920033448.do)
+  - [MapReduce design patterns](http://shop.oreilly.com/product/0636920025122.do)
+
+
 # Tasks
 
 Download and setup VM, as described in udacity's documents ([one](https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/edit) and [two](https://docs.google.com/document/d/1MZ_rNxJhR4HCU1qJ2-w7xlk2MTHVqa9lnl_uj-zRkzk/pub)).
@@ -265,6 +285,7 @@ $ hadoop fs -get output_by_category
 #
 # Check results
 $ vim output_by_category/part-00000
+```
 
 ## The file pathname task
 
