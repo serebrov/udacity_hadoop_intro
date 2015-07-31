@@ -1,0 +1,131 @@
+id	title	tagnames	author_id	body	node_type	parent_id	abs_parent_id	added_at	score	state_string	last_edited_id	last_activity_by_id	last_activity_at	active_revision_id	extra	extra_ref_id	extra_count	marked
+111	Why can't I watch video udacity?	video cs101 meta bug issues nationalities	100000066	<p>I am come from china.How to?</p>	question	\N	\N	2012-02-21 05:08:03.824261+00	0		100075539	100000239	2012-02-22 21:36:17.077627+00	100013171	\N	\N	1214	f
+2	Welcome to the Udacity CS101 Forum!	cs101 welcome	100000005	<p>Welcome to the Udacity CS101 Discussion Forum! I hope you're all excited to learn about computer science and how to build a search engine!</p>	question	\N	\N	2012-02-20 01:36:05.717881+00	16		\N	100006869	2012-02-28 18:47:08.806379+00	2	\N	\N	861	f
+3848		cs101 number strings homework	100000066	<p>Why we count ''0'' for <strong>start</strong> instead of ''1'' and ''-1'' for the <strong>stop</strong> instead of ''0''. Seems more logical don't you thing?</p>	answer	3778	3778	2012-02-23 01:03:07.15577+00	1		\N	100000691	2012-02-24 10:29:33.377435+00	4965	\N	\N	280	f
+66193	Have the courses cs212,  cs253,  and cs262 started yet?	cs101 cs212 cs262 cs253 discussion meta welcome lessons	100007808	<p>Today is  4/16/12,  have the courses gone live yet?  </p>	question	\N	\N	2012-04-16 12:36:08.043022+00	0	(closed)	208069	100007808	2012-04-16 12:49:23.453084+00	87554	\N	\N	680	t
+66199		cs101 	100004467	<p>Not yet, hopefully soon ...</p>	answer	66193	66193	2012-04-16 12:39:40.572717+00	0		\N	100004467	2012-04-16 12:39:40.572717+00	87560	\N	\N	0	f
+66196		cs101 	100071170	"<p>Officially not, supposed to be it will be opened at GMT 17.00 today, but you can still access cs262 <a href=""""http://www.udacity.com/view#Course/cs262/CourseRev/apr2012/Unit/3001/Nugget/5001"""" rel=""""nofollow"""">http://www.udacity.com/view#Course/cs262/CourseRev/apr2012/Unit/3001/Nugget/5001</a> </p>"	answer	66193	66193	2012-04-16 12:38:40.377037+00	0		\N	100000957	2012-04-16 12:38:40.377037+00	87557	\N	\N	0	f
+66195		cs101 	100002460	"<p>kinda, see <a href=""""http://www.udacity-forums.com/cs101/questions/65906/cs253-cs262-cs387-quizzes-and-some-videos-for-unit-1-now-available"""" rel=""""nofollow"""">http://www.udacity-forums.com/cs101/questions/65906/cs253-cs262-cs387-quizzes-and-some-videos-for-unit-1-now-available</a></p>"	answer	66193	66193	2012-04-16 12:38:31.611927+00	0		\N	100003934	2012-04-16 12:38:31.611927+00	87556	\N	\N	0	f
+6012754	Official Deadlines Homeworks	cs253 hw2-1 homework deadlines	100004819	"<p>I would like to know when is the deadline of every homework?</p>
+<p>I thought were every tuesday as CS101 course, and today I realize that solutions of homework 2 has been released.</p>
+<p>I am aware about the deadlines are not so strict as last course CS101, but I would like to deliver every homework at time stablished by the course.</p>
+<p>Thanks in advance!</p>"	question	\N	\N	2012-05-01 04:44:44.410042+00	1	(wiki)	\N	100004823	2012-05-01 05:24:19.434785+00	6015840	\N	\N	362	f
+6011209		cs253 	100010128	"<p>i is out of range</p>
+<pre><code>for i in range(0, len(nor)):
+    norm = norm + nor[i]
+    rot = rot+ro[i]
+</code></pre>
+<p>for example, nor=""123"",len=3, than range is 0,1,2,3, but you have only 3 letters in rot.</p>"	answer	6011204	6011204	2012-04-29 14:45:19.216809+00	1		\N	100010128	2012-04-29 14:45:19.216809+00	6013891	\N	\N	0	f
+6011208		cs253 	100071170	"<pre><code>s=""abc""
+print s[4]
+</code></pre>
+<p>Will also give string index out of range. You are trying to access an index of a string which is not there.</p>"	answer	6011204	6011204	2012-04-29 12:44:14.449528+00	1		\N	100001071	2012-04-29 12:44:14.449528+00	6013889	\N	\N	0	f
+6012771		cs253 	100012200	"<p>The solution videos will be posted Monday 23:59 UTC, so just before midnight that night. The first week's solution videos were posted one day late because the homework itself was posted one day late, and we wanted to give people a full week before posting the solution videos. Hope this helps!<br>
+And again, just to reiterate, there is absolutely no penalty for submitting after the solution videos are up.</p>"	answer	6012754	6012754	2012-05-01 05:24:19.434785+00	3	(accepted)	\N	100012200	2012-05-01 05:24:19.434785+00	6015861	\N	\N	0	t
+6011204	rot 13 error	cs253 discussion homework	100020526	"<p>Please help me in ROT 13 function .I have the following code </p>
+<pre><code>import webapp2
+import cgi
+import logging
+
+form = """"""
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Unit 2 Rot 13&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h2&gt;Enter some text to ROT13:&lt;/h2&gt;
+    &lt;form method=""post""&gt;
+      &lt;textarea name=""text""
+                style=""height: 100px; width: 400px;""&gt;%(text)s&lt;/textarea&gt;
+      &lt;br&gt;
+      &lt;input type=""submit""&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;
+""""""
+def escape_html(input):
+    return cgi.escape(input,quote = True)
+
+def rot13(input):
+    logging.info(""rot13"")
+    logging.info(input)
+    nor = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    ro = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
+    norm = ''
+    rot = ''
+    for i in range(0, len(nor)):
+        norm = norm + nor[i]
+        rot = rot+ro[i]
+    code = ''
+    for i in range(0,len(input)):
+      if input[i] in norm:
+            code = code + rot[norm.index(input[i])]
+      else:
+        code = code + input[i]
+    logging.info(""code"")
+    logging.info(code)
+    return code
+
+class MainPage(webapp2.RequestHandler):
+    def write_form(self, text=''):
+        self.response.out.write(form%{""text"": text})
+    def get(self):
+        #self.response.headers['Content-Type'] = 'text/html'
+        self.write_form()
+    def post(self):
+        text = escape_html(rot13(self.request.get('text')))
+        logging.info(text)
+        self.write_form(text)
+
+app = webapp2.WSGIApplication([('/', MainPage),],
+                              debug=True)
+</code></pre>
+<p>and the following error</p>
+<pre><code>Traceback (most recent call last):
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 1536, in __call__
+    rv = self.handle_exception(request, response, e)
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 1530, in __call__
+    rv = self.router.dispatch(request, response)
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 1278, in default_dispatcher
+    return route.handler_adapter(request, response)
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 1102, in __call__
+    return handler.dispatch()
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 572, in dispatch
+    return self.handle_exception(e, self.app.debug)
+  File ""E:\GAE\lib\webapp2\webapp2.py"", line 570, in dispatch
+    return method(*args, **kwargs)
+  File ""E:\haughty299\haughty299\main.py"", line 73, in post
+    text = escape_html(rot13(self.request.get('text')))
+  File ""E:\haughty299\haughty299\main.py"", line 53, in rot13
+    rot = rot+ro[i]
+IndexError: string index out of range
+</code></pre>
+<p>please help</p>"	question	\N	\N	2012-04-29 14:41:03.31365+00	0		\N	100010128	2012-04-29 14:45:19.216809+00	6013883	\N	\N	171	f
+7185	Hungarian group	cs101 hungarian nationalities welcome	100003268	"<p>Hi there!</p>
+<p>Any Hungarians doing the course? We could form a group!<br>
+;)</p>"	question	\N	\N	2012-02-27 15:09:11.184434+00	0		\N	100003268	2012-02-27 15:09:11.184434+00	9322	\N	\N	106	f
+26454	Course Application.	cs101 application discussion jobs	100003192	<p>Please tell about the Course Application. How to use the Course for higher education and jobs?</p>	question	\N	\N	2012-03-08 08:34:06.704674+00	-1		\N	100003192	2012-03-08 08:34:06.704674+00	34477	\N	\N	73	f
+3778	What profile information is public?	cs101 profile issues	100008254	<p>Is there a way to change what is and isn't publicly displayed?</p>	question	\N	\N	2012-02-23 22:00:39.134386+00	0	(closed)	90176	100002517	2012-03-08 22:12:34.271971+00	4876	\N	\N	228	t
+262	Course content Opera browser error	cs101 browsers issues	100004819	<p>It wont work with the opera browser, guys. </p>	question	\N	\N	2012-02-21 10:57:22.321732+00	1		\N	100006616	2012-03-22 16:12:10.024851+00	332	\N	\N	393	f
+15084	Digital Board used	cs101 board digital lessons jobs	100004819	"<p>Hi Guys, </p>
+<p>Does anyone know the model of the Digital Board the professor has been used during the course ?</p>
+<p>I am also a online professor in Brazil and I am interested on that type of gadget.</p>
+<p>Thanks, <br>
+Augusto</p>"	question	\N	\N	2012-03-02 04:35:40.964189+00	0		\N	100004557	2012-03-02 13:38:25.194134+00	19481	\N	\N	178	f
+6011936	Is there an alternative to typing our HTML into long strings?	cs253 google-appengine discussion html	100004819	<p>Something about doing that just feels kinda messy and it makes things harder to read since it messes up syntax highlighting in text editors. I can't help but think that this is done for the sake of simplicity in keeping everything in one file but I dunno, is this really how you write stuff in google app engine and for web apps in general?</p>	question	\N	\N	2012-04-30 05:18:29.352642+00	0		\N	100019875	2012-04-30 05:20:50.05843+00	6014792	\N	\N	365	f
+6011938		cs253 	100071170	<p>Well no. Alternative is to use templates. They provide you with single HTML file in which you can substitute strings. </p>	answer	6011936	6011936	2012-04-30 05:20:08.658411+00	0		\N	100071170	2012-04-30 05:20:08.658411+00	6014794	\N	\N	0	f
+6011939		cs253 	100019875	"<p>Related:</p>
+<ul>
+<li><a href=""http://forums.udacity.com/cs253-april2012/questions/7883/question-to-the-teachers-will-you-teach-how-to-use-html-templates"" rel=""nofollow"">http://forums.udacity.com/cs253-april2012/questions/7883/question-to-the-teachers-will-you-teach-how-to-use-html-templates</a></li>
+<li><a href=""http://forums.udacity.com/cs253-april2012/questions/9973/how-to-use-the-jinja2-template-engine-with-appengine"" rel=""nofollow"">http://forums.udacity.com/cs253-april2012/questions/9973/how-to-use-the-jinja2-template-engine-with-appengine</a></li>
+<li><a href=""https://developers.google.com/appengine/docs/python/gettingstarted/templates"" rel=""nofollow"">https://developers.google.com/appengine/docs/python/gettingstarted/templates</a></li>
+</ul>"	answer	6011936	6011936	2012-04-30 05:20:50.05843+00	1	(accepted)	\N	100019875	2012-04-30 05:20:50.05843+00	6014796	\N	\N	0	t
+6015497		cs253 	100071170	"<p><a href=""http://forums.udacity.com/users/100005156/sempaiscuba""><a href=""http://forums.udacity.com/users/100005156/sempaiscuba"">@sempaiscuba</a></a> - nice find! I see Sebastian has his Google Glasses on! Very cool!</p>
+<p>BTW, speaking of the Google Glasses, I can't wait until a SDK is offered for that! </p>"	answer	6015491	6015491	2012-05-04 14:48:04.315763+00	1	(accepted)	\N	100005156	2012-05-04 17:51:07.686951+00	6019357	\N	\N	0	t
+6015491	Charlie Rose interviews Sebastian Thrun, Founder of Udacity	cs253 udacity-future discussion offtopic udacity	100005156	"<p>Charlie Rose interviews Sebastian Thrun, the Founder of Udacity and head of Google X:</p>
+<p><a href=""http://bit.ly/JPjsJv"" rel=""nofollow"">http://bit.ly/JPjsJv</a></p>"	question	\N	\N	2012-05-04 17:24:19.588704+00	2		\N	100005156	2012-05-04 20:33:18.910654+00	6019351	\N	\N	759	f
+6015564		cs253 	100004467	<p>watched this, Thanks.  Sebastian's done some amazing stuff</p>	answer	6015491	6015491	2012-05-04 20:10:24.362391+00	1	(accepted)	\N	100004467	2012-05-04 20:10:24.362391+00	6019450	\N	\N	0	t
