@@ -178,9 +178,16 @@ if oldKey != None:
       - Each mapper generate top N list
       - Reducer finds global top N
   - Summarization patterns: Counting, Min/Max, Statistics, Index
-      - Inverted index
-      - Numerical summarizations - counts, min/max, frist/last, mean/median
-  - Structural patterns: Combining data sets
+    - Inverted index
+    - Numerical summarizations - counts, min/max, frist/last, mean/median
+  - Structural (hierarchical) patterns: Combining data sets
+    - RDBMs -> Hadoop, here input data is linked by foreing keys and data is structured and row-based
+    - Example: combine two datasets, Posts and Users
+      - author_id in Posts points to Users.user_ptr_id
+      - Question: what is the reputation of a post's author? (this data is in Users table, so we need to find appropriate Users record and add it to posts data)
+      - to use 2 files as a job input - upload both forum files to a directory in HDFS and provide that directory to the script as the input source.
+      - mapper merges all data into single stream and marks records of different kind (like "A" / "B")
+      - reducer then merges posts and users data together
 
 - Combiners
   - Acts between mappers and reducers
@@ -193,6 +200,8 @@ if oldKey != None:
 - Books
   - [Hadoop: The Definitive Guide](http://shop.oreilly.com/product/0636920033448.do)
   - [MapReduce design patterns](http://shop.oreilly.com/product/0636920025122.do)
+
+[Resources and additional reading](https://www.udacity.com/wiki/ud617)
 
 
 # Tasks
