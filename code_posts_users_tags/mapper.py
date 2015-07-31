@@ -14,6 +14,10 @@
 We are interested seeing what are the top tags used in posts.
 
 Write a mapreduce program that would output Top 10 tags, ordered by the number of questions they appear in.
+
+NOTE: current implementation can be improved. Now mappers output all the tags and then reducers process all the data.
+Instead mapper can pre-process the data and return only top 10 tags.
+Then reducer will have much less job to do.
 """
 
 import sys
