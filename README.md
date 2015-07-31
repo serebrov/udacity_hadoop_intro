@@ -182,6 +182,14 @@ if oldKey != None:
       - Numerical summarizations - counts, min/max, frist/last, mean/median
   - Structural patterns: Combining data sets
 
+- Combiners
+  - Acts between mappers and reducers
+  - Do pre-reducing locally, on the same instance where mapper runs
+  - To use it make sure that reducer code can be run multiple times - first on mapper nodes and then on the reducer node
+  - Add `-combiner reducer.py` to the MR job parameters
+  - Alternative - is to use separate script as combiner
+  - With combiners much less data need to be sent from mappers to reducers - we save network bandwidth and also do more reducing work in parallel
+
 - Books
   - [Hadoop: The Definitive Guide](http://shop.oreilly.com/product/0636920033448.do)
   - [MapReduce design patterns](http://shop.oreilly.com/product/0636920025122.do)
